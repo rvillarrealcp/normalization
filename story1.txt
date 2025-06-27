@@ -1,0 +1,14 @@
+
+---
+
+### ✅ 
+Alex wanted to BECOME a FULL-STACK developer. However, their journey started with many hurdles!!! 💻💡
+
+They spent HOURS reading docs.... <div>debugging</div> code & making mistakes. Sometimes they typed code like: 
+print("Hello world!!!") --- but it didn’t work (because they forgot a closing parenthesis).
+
+Visit http://my-coding-journey.dev to see their progress.
+
+#100DaysOfCode #learning ***   
+
+At the end, Alex said: "THIS is mine!"  .

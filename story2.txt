@@ -1,0 +1,9 @@
+When Jamie started coding, they thought it was Impossible...!   But with practice, they became better & better. 
+
+"Why isn't this FUNCTION working???" they'd ask. It was usually a small typo like: prin("Test")
+
+They built their first app: a tiny Calculator -> -> ->    It had bugs, but it was THEIRS.
+
+See more at https://jamie-devs.io
+
+%%% Debugging is part of the fun! ###
