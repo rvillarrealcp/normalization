@@ -1,8 +1,16 @@
+import nltk
+nltk.download('punkt')
+nltk.download('stopwords')
+nltk.download('wordnet')
+nltk.download('averaged_perceptron_tagger')
+
+
 """
 👨‍💻 Stemming Task
 
 Your goal is to:
 1️⃣ Read the content of either story1.txt or story2.txt.
+
 2️⃣ Apply regex with re.sub() to remove:
     - HTML tags (e.g. <div>...</div>)
     - URLs
@@ -21,3 +29,7 @@ Your goal is to:
 
 Write your code below this string.
 """
+text_file = open("./story1.txt")
+file_val = text_file.read()
+text_file.close()
+
