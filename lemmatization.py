@@ -1,3 +1,13 @@
+import nltk
+import re
+from nltk.tokenize import sent_tokenize, word_tokenize
+from nltk.corpus import stopwords
+from nltk.stem import WordNetLemmatizer
+nltk.download('punkt')
+nltk.download('stopwords')
+nltk.download('wordnet')
+nltk.download('averaged_perceptron_tagger')
+
 """
 👨‍💻 Lemmatization Task
 
@@ -22,3 +32,25 @@ Your goal is to:
 
 Write your code below this string.
 """
+text_file = open("./story2.txt")
+file_val = text_file.read()
+text_file.close()
+
+clean_story = re.sub(r'\s+', ' ', file_val).strip()  # Keep common sentence characters
+cleaner_story = re.sub(r' *\.', ".", clean_story)
+cleanest_story = re.sub(r'</?div>|[^\w\.\s/:]', '', cleaner_story)
+cleanest_story = re.sub(r'\s+',' ', cleanest_story).strip()
+
+sentences = sent_tokenize(cleanest_story)
+
+words = word_tokenize(cleanest_story)
+
+english_stopwords = set(stopwords.words('english'))
+
+filtered_words = [word for word in words if word.lower() not in english_stopwords]
+
+lemmatizer = WordNetLemmatizer()
+
+lemmatized_words = [lemmatizer.lemmatize(word) for word in filtered_words]
+
+print(lemmatized_words)
